@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #fce4ec, #ffe3f1);
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+
+.container {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  max-width: 800px;
+  width: 90%;
+}
+
+h1 {
+  font-size: 2em;
+  color: #e91e63;
+}
+
+button {
+  margin-top: 20px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #d81b60;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1em;
+  }
+}
+
+#music-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #e91e63;
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  border-radius: 50px;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: background 0.3s ease;
+}
+
+#music-btn:hover {
+  background: #c2185b;
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease-in 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+#message p {
+  margin: 6px 0;           /* reduce el espacio vertical entre párrafos */
+  line-height: 1.3;        /* reduce el interlineado dentro del párrafo */
+  font-size: 1.05em;       /* opcional: tamaño más parejo */
+  text-align: left;        /* o 'center' si prefieres alineado al centro */
+  max-width: 100%;
+  word-wrap: break-word;
+}
